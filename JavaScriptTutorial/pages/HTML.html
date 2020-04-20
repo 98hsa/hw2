@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM HTML'i Değiştirme</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+
+<center>  <h1> JavaScript HTML DOM - HTML'yi değiştirme </h1>
+<p>HTML DOM, JavaScript'in HTML öğelerinin içeriğini değiştirmesine izin verir.</p>
+<h2>HTML Çıktı Akışını Değiştirme</h2>
+<p>JavaScript dinamik HTML içeriği oluşturabilir:</p>
+<strong>Tarih: Çar 08 Nisan 2020 14:43:45 GMT + 0300 (GMT + 03: 00)</strong>
+<p>JavaScript'te, document.write()doğrudan HTML çıktı akışına yazmak için kullanılabilir:</p>
+<div id="tablo1">
+    <p><.!DOCTYPE html></p>
+    <p><.html></p>
+    <p><.body></p>
+    <p><.script></p>
+    <p>document.write(Date());</p>
+    <p><./script></p>
+    <p><./body></p>
+    <p><./html></p>
+
+</div>
+
+<br>
+    <mark>Asla document.write()belge yüklendikten sonra kullanmayın . Belgenin üzerine yazılır.</mark>
+<h2>HTML İçeriğini Değiştirme</h2>
+    <p>Bir HTML öğesinin içeriğini değiştirmenin en kolay yolu innerHTMLözelliği kullanmaktır </p>
+<p>Bir HTML öğesinin içeriğini değiştirmek için şu sözdizimini kullanın:</p>
+    <table>
+        <tr>
+            <td>document.getElementById(id).innerHTML = new HTML</td>
+        </tr>
+    </table>
+<p>Bu örnek, bir <p>öğenin içeriğini değiştirir :</p>
+
+<div id="tablo1">
+    <p>html</p>
+    <p>body</p>
+    <p><.p id="p1">Hello World!<./p></.p>
+    <p>script</p>
+    <p>document.getElementById("p1").innerHTML = "New text!";</p>
+    <p>script</p>
+    <p>/body</p>
+    <p>/html</p>
+</div>
+
+    <p>Örnek açıklandı:</p>
+<li>Yukarıdaki HTML dokümanı <.p>,id="p1"</li>
+<li>HTML DOM kullanarak öğeyi id="p1"</li>
+<li>JavaScript innerHTML, o öğenin içeriğini ( ) "Yeni metin!" Olarak değiştirir</li>
+<p>Bu örnek, bir <.h1>öğenin içeriğini değiştirir :</p>
+
+<div id="tablo">
+    <p><.!DOCTYPE html></p>
+    <p><.html></p>
+    <p><.body></p>
+    <p><.h1 id="id01">Old Heading<./h1></p>
+    <p><.script></p>
+    <p>var element = document.getElementById("id01");</p>
+    <p>element.innerHTML = "New Heading";</p>
+    <p><./script></p>
+    <p><./body></p>
+    <p><./html></p>
+</div>
+<p>Örnek açıklandı:</p>
+    <li>Yukarıdaki HTML dokümanı <.h1>,id="id01"</li>
+    <li>HTML DOM kullanarak öğeyi id="id01"</li>
+    <li>JavaScript innerHTMLbu öğenin içeriğini ( ) "Yeni Başlık" olarak değiştirir</li>
+
+    <h2>Bir Özelliğin Değerini Değiştirme</h2>
+
+<p>Bir HTML özelliğinin değerini değiştirmek için şu sözdizimini kullanın:</p>
+    <table>
+        <tr>
+            <td>document.getElementById(id).attribute = new value</td>
+        </tr>
+    </table>
+    <p>Bu örnek, bir <.img>öğenin src özelliğinin değerini değiştirir :</p>
+
+    <p >Örnek açıklandı:</p>
+<li> Yukarıdaki HTML dokümanı <.img>,id="myImage"</li>
+<li>HTML DOM kullanarak öğeyi id="myImage"</li>
+<li>JavaScript srcbu öğenin niteliğini "smiley.gif" yerine "landscape.jpg" olarak değiştirir</li>
+<br>
+</center>
+
+</body>
+</html>

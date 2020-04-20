@@ -1,0 +1,39 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alışveriş Listesi</title>
+    <link rel="stylesheet" href="../../css/alisverisListesi.css">
+
+</head>
+<body background="../../img/online.jpg" >
+
+<h1>ALIŞVERİŞ LİSTESİ</h1>
+<input type="text" name="" id="urun"><button id="ekle">Ürün Ekle</button> &emsp; <button onclick="myFunction()">Listeyi temizle</button><br>
+<ul id="liste">
+</ul>
+
+<script>
+    function myFunction() {
+        var list = document.getElementById("liste");
+        list.removeChild(list.childNodes[0]);
+    }
+
+    const urun =document.querySelector("#urun");
+    const ekle =document.querySelector("#ekle");
+    const liste =document.querySelector("#liste");
+
+    ekle.onclick=function(){
+        let li=document.createElement("li");
+        li.textContent=urun.value;
+
+        liste.appendChild(li);
+
+        urun.value="";
+        urun.focus();
+    }
+</script>
+
+</body>
+</html>

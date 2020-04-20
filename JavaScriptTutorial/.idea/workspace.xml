@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="199a5f0a-f109-4d0c-8b13-1b354afaeb51" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zu4m1yVhhak9HZHL2uknTu8r9h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/outputs" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\outputs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\outputs" />
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\pages\hw2examples" />
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\css" />
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\img" />
+      <recent name="C:\Users\hp\PhpstormProjects\JavaScriptTutorial\js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.fonksiyontanimlari.html">
+    <configuration name="DOM.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScriptTutorial/pages/DOM.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="alisverisListesi.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScriptTutorial/pages/hw2examples/alisverisListesi.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="fonksiyontanimlari.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScriptTutorial/pages/fonksiyontanimlari.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="rapor1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScriptTutorial/pages/hw2examples/rapor1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="yonetim.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JavaScriptTutorial/pages/yonetim.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.fonksiyontanimlari.html" />
+        <item itemvalue="JavaScript Debug.yonetim.html" />
+        <item itemvalue="JavaScript Debug.DOM.html" />
+        <item itemvalue="JavaScript Debug.rapor1.html" />
+        <item itemvalue="JavaScript Debug.alisverisListesi.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="199a5f0a-f109-4d0c-8b13-1b354afaeb51" name="Default Changelist" comment="" />
+      <created>1585675800895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585675800895</updated>
+      <workItem from="1585675802208" duration="571000" />
+      <workItem from="1585676606461" duration="25000" />
+      <workItem from="1585676698347" duration="23137000" />
+      <workItem from="1585742121635" duration="8615000" />
+      <workItem from="1585777284682" duration="649000" />
+      <workItem from="1585778544597" duration="1304000" />
+      <workItem from="1585846136323" duration="327000" />
+      <workItem from="1585847620046" duration="1865000" />
+      <workItem from="1585854393178" duration="968000" />
+      <workItem from="1585856395367" duration="5000" />
+      <workItem from="1585856527582" duration="119000" />
+      <workItem from="1586261016679" duration="30247000" />
+      <workItem from="1586304526240" duration="8000" />
+      <workItem from="1586343046157" duration="13265000" />
+      <workItem from="1586369356169" duration="11869000" />
+      <workItem from="1586436399875" duration="111000" />
+      <workItem from="1586445170955" duration="43000" />
+      <workItem from="1586446742174" duration="248000" />
+      <workItem from="1586447001923" duration="130000" />
+      <workItem from="1586447169148" duration="26000" />
+      <workItem from="1586859772565" duration="3202000" />
+      <workItem from="1587147945065" duration="7963000" />
+      <workItem from="1587194467234" duration="636000" />
+      <workItem from="1587198978650" duration="13378000" />
+      <workItem from="1587232826341" duration="6902000" />
+      <workItem from="1587287687847" duration="16789000" />
+      <workItem from="1587378208264" duration="1154000" />
+      <workItem from="1587394134708" duration="9136000" />
+      <workItem from="1587406994782" duration="48000" />
+      <workItem from="1587407909389" duration="653000" />
+      <workItem from="1587411156027" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="846" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585855360113">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="846" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585855360113" />
+    <state x="448" y="189" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1586862538481">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="448" y="189" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586862538481" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587289549910">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587289549910" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587394632339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587394632339" />
+    <state width="721" height="208" key="GridCell.Tab.0.bottom" timestamp="1585700678956">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="721" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585700678956" />
+    <state width="721" height="208" key="GridCell.Tab.0.center" timestamp="1585700678956">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="721" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585700678956" />
+    <state width="721" height="208" key="GridCell.Tab.0.left" timestamp="1585700678956">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="721" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585700678956" />
+    <state width="721" height="208" key="GridCell.Tab.0.right" timestamp="1585700678956">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="721" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585700678956" />
+    <state x="555" y="55" key="SettingsEditor" timestamp="1585675820287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585675820287" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587411160866">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587411160866" />
+    <state x="785" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585686525535">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="785" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1585686525535" />
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587321594131">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587321594131" />
+  </component>
+</project>

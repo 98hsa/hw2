@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kullanıcı Formu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/kullaniciformu.css">
+
+</head>
+
+<body>
+<h2>ŞİRKET DEĞERLERİMİZ</h2>
+<p id="p1">Değerlerimiz</p>
+<form method="POST" action="#">
+
+    <table style="border: 2px solid #9e00ff" align="center" cellpadding="3">
+        <tr>
+            <td colspan="5" align="center">
+                <button type="button" onclick="myFunction()" >18 yaş altı için</button>
+                <button id="myButton1" >Başvuru Tarihleri</button>
+
+                <h1>Kullanıcı Formu</h1>
+
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>T.C Kimlik</td>
+            <td><input type="text" name="tcno" placeholder="tc kimlik giriniz" maxlength="11" size="11" required></td>
+        </tr>
+
+        <tr>
+            <td>Adı</td>
+            <td><input type="text"  name="ad" placeholder="adı giriniz" required></td>
+        </tr>
+
+        <tr>
+            <td>Soyadı</td>
+            <td><input type="text" name="soyad" placeholder="soyadı giriniz" required></td>
+        </tr>
+
+        <tr>
+            <td>E-posta</td>
+            <td><input type="email" name="eposta" placeholder="eposta giriniz"required ></td>
+        </tr>
+
+        <tr>
+            <td>Şifre</td>
+            <td><input type="password" name="sifre" placeholder="şifre giriniz" required></td>
+        </tr>
+
+        <tr>
+            <td>Doğum Tarihi</td>
+            <td><input type="date" name="dtarihi" required></td>
+        </tr>
+
+        <tr>
+            <td>Şehir</td>
+            <td>
+                <select name="dogumyeri" required>
+                    <option value="06">Ankara</option>
+                    <option value="34">İstanbul</option>
+                    <option value="35">İzmir</option>
+                    <option value="58">Sivas</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Cinsiyet</td>
+            <td>
+                <input type="radio" name="cinsiyet" value="erkek" required>Erkek
+                <input type="radio" name="cinsiyet" value="kadın" required>Kadın
+            </td>
+        </tr>
+
+        <tr>
+            <td>Telefon</td>
+            <td><input type="text" name="telefon" placeholder="telefon giriniz" required></td>
+        </tr>
+
+
+        <tr>
+            <td>Referanslar</td>
+            <td>
+                <textarea cols="40" rows="5" required></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Yabancı Dil</td>
+            <td>
+                <input type="checkbox" name="en" required>İngilizce<br>
+                <input type="checkbox" name="de" >Almanca<br>
+                <input type="checkbox" name="fr" >Fransızca<br>
+                <input type="checkbox" name="ing" >İspanyolca<br>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Gönder" >
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" value="Temizle">
+            </td>
+        </tr>
+
+    </table>
+</form>
+<script>
+
+
+    document.getElementById("p1").innerHTML = "<ul><li>Kusursuzluk Tutkusu</li>" +
+    "   <li>Dürüstlük.</li>  " +
+                                                " <li>Yenilik.</li>" +
+                                                    "    <li>Sorumluluk</li> " +
+                                                     " <li>Ekip Çalışması</li> " +
+                                                    "<li>Bireye Saygı</li> " +
+                                                    "  <li>Liderlik.</li>" +
+                                                     "<li>Bağlılık.</li>" +
+                                                     "<li>Cesaret.</li><li>Müşteri Odağı</li><li>İletişim</li><li>Toplum Ruhu.</li> </ul>"
+    document.getElementById("p1").style.color = "purple";
+    document.getElementById('myButton1').onclick=function () {
+        alert("27.01.2020-19.11.2020");
+
+    }
+  ;
+    document.write(Date());
+
+    function myFunction() {
+        document.write("üzgünüz");
+
+    }
+
+</script>
+</body>
+</html>

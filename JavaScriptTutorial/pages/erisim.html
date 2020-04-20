@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object ( Nesne) erişimcileri</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+
+<center>  <h1> JavaScript Nesne Erişimcileri </h1>
+    <h2>JavaScript Erişicileri (Mektuplar ve Ayarlayıcılar)</h2>
+    <p>ECMAScript 5 (2009) Getter ve Setters'ı tanıttı.</p>
+    <p>Harfler ve ayarlayıcılar Nesne Erişimcilerini (Hesaplanan Özellikler) tanımlamanızı sağlar.</p>
+    <h2>JavaScript Getter (Anahtar Kelime Al)</h2>
+    <p>Bu örnek, lang özelliğin get değerine bir özellik kullanır language.</p>
+<div id="tablo">var person = {
+   <p> firstName: "John",</p>
+    <p>  lastName : "Doe",</p>
+    <p>language : "",</p>
+    <p>set lang(lang) {</p>
+    <p this.language = lang;></p>
+    } };
+
+   <em> // Set an object property using a setter:</em>
+    <p> person.lang = "en";</p>
+
+   <em> // Display data from the object:</em>
+    <p> document.getElementById("demo").innerHTML = person.language;</p>
+</div>
+    <h2>JavaScript Setter (Anahtar Kelime Grubu)</h2>
+    <p>Bu örnek, langözelliğin set değerine bir özellik kullanır language.</p>
+
+    <div id="tablo">
+        <p>var person = {</p>
+        <p> firstName: "John",</p>
+        <p>lastName : "Doe",</p>
+        <p>language : "",</p>
+        <p>set lang(lang) {</p>
+        <p>this.language = lang;</p>
+        <p>}</p>
+        <p>};</p>
+        <em>// Set an object property using a setter:</em>
+        <p>person.lang = "en";</p>
+        <em>// Display data from the object:</em>
+        <p></p>
+    </div>
+<h2>JavaScript İşlevi veya Getter?</h2>
+<p>Bu iki örnek arasındaki farklar nelerdir?</p>
+<div id="tablo">
+    <p>var person = {</p>
+    <p>firstName: "John",</p>
+    <p>lastName : "Doe",</p>
+    <p>fullName : function() {</p>
+    <p> return this.firstName + " " + this.lastName;</p>
+    <p>}</p>
+    <p>};</p>
+    <em>// Display data from the object using a method:</em>
+    <p>   document.getElementById("demo").innerHTML = person.fullName();</p>
+</div>
+    <h2>Veri kalitesi</h2>
+<p>JavaScript, alıcıları ve ayarlayıcıları kullanırken daha iyi veri kalitesi sağlayabilir.</p>
+<p>langBu örnekte özelliği kullanmak, özelliğin değerini languagebüyük harf olarak döndürür :</p>
+<div id="tablo">
+    <em>// Create an object:</em>
+    <p>var person = {</p>
+    <p> firstName: "John",</p>
+    <p>lastName : "Doe",</p>
+    <p>language : "en",</p>
+    <p>get lang() {</p>
+    <p>return this.language.toUpperCase();</p>
+    <p>}</p>
+    <p>};</p>
+    <em>// Display data from the object using a getter:</em>
+    <p>document.getElementById("demo").innerHTML = person.lang;</p>
+</div>
+
+    <h2>Neden Harf ve Ayarlayıcılar Kullanılmalı?</h2>
+        <li>Daha basit bir sözdizimi sağlar</li>
+        <li>Özellikler ve yöntemler için eşit sözdizimine izin verir</li>
+        <li>Daha iyi veri kalitesi sağlayabilir</li>
+        <li>Sahne arkasındaki işleri yapmak için kullanışlıdır</li>
+
+
+<h2>Object.defineProperty ()</h2>
+    <p><strong style="color: #ff4ddd">Object.defineProperty()</strong>Yöntem ayrıca, alıcı ve ayarlayıcıları eklemek için kullanılabilir:</p>
+
+<div id="tablo"><p>var obj = {counter : 0};</p>
+    <p>Object.defineProperty(obj, "reset", {</p>
+    <p> get : function () {this.counter = 0;}});</p>
+    <p>Object.defineProperty(obj, "increment", {</p>
+    <p>get : function () {this.counter++;}});</p>
+    <p>Object.defineProperty(obj, "decrement", {</p>
+    <p>get : function () {this.counter--;}});</p>
+    <p>Object.defineProperty(obj, "add", {</p>
+    <p>set : function (value) {this.counter += value;}});</p>
+    <p>Object.defineProperty(obj, "subtract", {</p>
+    <p>set : function (value) {this.counter -= value;}});</p>
+    <p>obj.reset;</p>
+    <p>obj.add = 5;</p>
+    <p>obj.subtract = 1;</p>
+    <p>obj.increment;</p>
+</div>
+
+
+
+
+
+
+
+
+
+</center>
+
+</body>
+</html>

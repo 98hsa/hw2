@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM etkinlikler</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+
+<center>  <h1> JavaScript HTML DOM Etkinlikleri </h1>
+    <p>HTML DOM, JavaScript'in HTML olaylarına tepki vermesine izin verir</p>
+    <h2>Olaylara Tepki</h2>
+<p>Bir kullanıcı bir HTML öğesini tıkladığında olduğu gibi bir etkinlik gerçekleştiğinde JavaScript yürütülebilir.</p>
+<p>Kullanıcı bir öğeyi tıkladığında kod yürütmek için bir HTML olay özelliğine JavaScript kodu ekleyin:</p>
+
+    <table>
+        <tr>
+            <td>onclick=JavaScript</td>
+        </tr>
+    </table>
+
+  <strong>HTML olaylarına örnekler:</strong>
+    <li>Bir kullanıcı fareyi tıkladığında</li>
+    <li>Bir web sayfası yüklendiğinde</li>
+    <li>Bir resim yüklendiğinde</li>
+    <li>Fare bir öğenin üzerine geldiğinde</li>
+    <li>Bir giriş alanı değiştirildiğinde</li>
+    <li>Bir HTML formu gönderildiğinde</li>
+    <li>Bir kullanıcı bir tuşa bastığında</li>
+
+    <p>Bu örnekte, <.h1>bir kullanıcı tıkladığında öğenin içeriği değiştirilir:</p>
+<div id="tablo1">
+    <p><.!DOCTYPE html></p>
+    <p><.html></p>
+    <p><.body></p>
+    <p><.h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!<./h1></p>
+    <p><./body></p>
+    <p><./html></p>
+</div>
+<h2>HTML Olay Özellikleri</h2>
+    <p>HTML öğelerine olay atamak için olay niteliklerini kullanabilirsiniz.</p>
+<p>Düğme öğesine bir onclick olayı atayın:</p>
+    <table>
+        <tr>
+        <td><.button onclick="displayDate()">Try it<./button></td>
+    </tr>
+    </table>
+
+<p>Yukarıdaki örnekte displayDate, düğme tıklatıldığında adlı bir işlev yürütülür.</p>
+<h2>HTML DOM'yi Kullanarak Etkinlik Atama</h2>
+<p>HTML DOM, JavaScript kullanarak HTML öğelerine etkinlik atamanıza olanak tanır:</p>
+<p>Düğme öğesine bir onclick olayı atayın:</p>
+
+<div id="tablo1">
+    <p><.script></p>
+    <p>document.getElementById("myBtn").onclick = displayDate;</p>
+    <p><./script></p>
+</div>
+<p>Yukarıdaki örnekte, adlı displayDatebir HTML öğesine adında bir işlev atanmıştır id="myBtn".</p>
+<p>Düğme tıklatıldığında işlev yürütülür.</p>
+
+    <h2>Onload ve Onunload Olayları</h2>
+<p>onloadVe onunloadkullanıcının girdiği veya sayfayı ayrıldığında olaylar tetiklenir.</p>
+<p>onloadOlay ziyaretçinin tarayıcı tipi ve tarayıcı sürümünü kontrol edin ve bilgilere</p>
+<p>dayanarak web sayfasının doğru sürümünü yüklemek için kullanılabilir.</p>
+<p>onloadVe onunloadolaylar kurabiye başa kullanılabilir.</p>
+    <table>
+        <tr>
+            <td><.body onload="checkCookies()"></td>
+        </tr>
+    </table>
+
+    <h2>Değişim Etkinliği</h2>
+<p>onchangeOlay genellikle giriş alanlarının doğrulama ile kombinasyon halinde kullanılır.</p>
+<p>Aşağıda onchange'in nasıl kullanılacağına dair bir örnek verilmiştir. upperCase() Bir kullanıcı bir giriş alanının içeriğini değiştirdiğinde işlev çağrılır.</p>
+
+    <table>
+        <tr>
+            <td><.input type="text" id="fname" onchange="upperCase()"></td>
+        </tr>
+    </table>
+<h2>Devasa ve Devasa Olaylar</h2>
+<p>onmouseoverVe onmouseoutolaylar bir işlevi tetiklemek için kullanılabilir olduğunda kullanıcı fare ile üzerine veya bir HTML elemanının dışarı:</p>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+         style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+        Mouse Over Me</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "Thank You"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over Me"
+        }
+    </script>
+<h2>Onmousedown, onmouseup ve onclick Etkinlikleri</h2>
+    <p>onmousedown, onmouseupVe onclickolaylar fare tıklama birer parçasıdır.</p>
+    <p> İlk olarak bir fare düğmesine tıklandığında, onmousedown olayı tetiklenir</p>,
+    <p> daha sonra fare düğmesi bırakıldığında onmouseup olayı tetiklenir, son olarak</p>
+   <p> fare tıklaması tamamlandığında onclick olayı tetiklenir.</p>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+         style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+        Click Me</div>
+
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.innerHTML = "Release Me";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor="#D94A38";
+            obj.innerHTML="Thank You";
+        }
+    </script>
+
+</center>
+</body>
+</html>

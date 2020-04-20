@@ -1,0 +1,23 @@
+
+
+input{
+    padding:8px 30px;
+    margin-right:10px;
+}
+button{
+    background: #2651cd;
+    color:#fff;
+    border:none;
+    padding:10px 30px;
+}
+
+body{
+    background-size: 1550px 800px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+ul{
+    list-style-type: square;
+
+}

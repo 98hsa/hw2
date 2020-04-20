@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM dinleyici</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+
+<center>  <h1> JavaScript HTML DOM Etkinlik Listesi </h1>
+<h2>AddEventListener () yöntemi</h2>
+    <table>
+        <tr>
+            <td>document.getElementById("myBtn").addEventListener("click", displayDate);</td>
+        </tr>
+    </table>
+
+<p>addEventListener()Yöntem belirtilen elemanına bir olay gidericisini vermektedir</p>
+<p>addEventListener()Yöntem, mevcut olay işleyicileri üzerine olmayan bir öğeye bir olay gidericisini vermektedir.</p>
+<p>Bir öğeye birçok olay işleyici ekleyebilirsiniz.</p>
+<p>Bir öğeye aynı türden birçok olay işleyici ekleyebilirsiniz, örneğin iki "tıklama" olayı.</p>
+<p>Olay dinleyicilerini yalnızca HTML öğelerine değil, herhangi bir DOM nesnesine ekleyebilirsiniz. yani pencere nesnesi.</p>
+<p>addEventListener()Yöntem daha kolay köpüren nasıl olay hızla reaksiyona girerek kontrol kolaylaştırır.</p>
+<p>addEventListener()Yöntemi kullanırken, daha iyi okunabilirlik için JavaScript HTML işaretlemesinden ayrılır</p>
+<p>ve HTML işaretlemesini denetlemeseniz bile olay dinleyicileri eklemenize olanak tanır.</p>
+<p>Bir olay dinleyicisini removeEventListener()yöntemi kullanarak kolayca kaldırabilirsiniz .</p>
+<h2>Sözdizimi</h2>
+    <table>
+        <tr>
+            <td>element.addEventListener(event, function, useCapture);</td>
+        </tr>
+    </table>
+
+    <p>İlk parametre olayın türüdür (" click" veya " mousedown" veya başka bir<u> HTML DOM Etkinliği gibi)</u> </p>
+    <p>İkinci parametre, olay meydana geldiğinde çağırmak istediğimiz işlevdir.</p>
+    <p>Üçüncü parametre, olay köpürme mi yoksa olay yakalama mı kullanılacağını belirten bir boole değeridir. Bu parametre isteğe bağlıdır.</p>
+    <mark>Etkinlik için "on" önekini kullanmadığınızı unutmayın; " click" yerine " " kullanın onclick.</mark>
+    <h2>Bir Elemana Olay İşleyici Ekleme</h2>
+    <p>"Merhaba Dünya!" kullanıcı bir öğeyi tıkladığında:</p>
+
+    <table>
+        <tr>
+            <td>element.addEventListener("click", function(){ alert("Hello World!"); });</td>
+        </tr>
+    </table>
+
+<p>Harici bir "adlandırılmış" işleve de başvurabilirsiniz:</p>
+<p>"Merhaba Dünya!" kullanıcı bir öğeyi tıkladığında:</p>
+<div id="tablo1">
+    <p>element.addEventListener("click", myFunction);</p>
+    <p>function myFunction() {</p>
+    <p> alert ("Hello World!");</p>
+    <p>}</p>
+</div>
+<h2>Aynı Öğeye Birçok Olay İşleyicisi Ekleme</h2>
+<p>addEventListener()Yöntem mevcut olayları üzerine yazmadan, aynı elemana birçok etkinlik eklemek sağlar:</p>
+    <table>
+        <tr>
+            <td>
+                <p>element.addEventListener("click", myFunction);</p>
+                <p>element.addEventListener("click", mySecondFunction);</p>
+               </td>
+        </tr>
+    </table>
+<p>Aynı öğeye farklı türde etkinlikler ekleyebilirsiniz:</p>
+    <table>
+        <tr>
+            <td>
+                <p>element.addEventListener("mouseover", myFunction);</p>
+                <p>element.addEventListener("click", mySecondFunction);</p>
+                <p>element.addEventListener("mouseout", myThirdFunction);</p>
+            </td>
+        </tr>
+    </table>
+    <h2>Pencere Nesnesine Olay İşleyicisi Ekleme</h2>
+<p>addEventListener()Yöntem böyle HTML öğeleri, HTML dokümanının, pencere nesnelere</p>
+<p>veya diğer nesneler gibi herhangi bir HTML DOM nesne üzerinde olay dinleyicileri</p>
+<p>eklemenize izin verir böyle destek olaylar, xmlHttpRequestnesne.</p>
+<p>Bir kullanıcı pencereyi yeniden boyutlandırdığında tetiklenen bir olay dinleyicisi ekleyin:</p>
+c
+<h2>Geçiş Parametreleri</h2>
+<p>Parametre değerlerini iletirken, belirtilen işlevi parametrelerle çağıran bir "anonim işlev" kullanın:</p>
+    <table>
+        <tr>
+            <td>element.addEventListener("click", function(){ myFunction(p1, p2); });</td>
+        </tr>
+    </table>
+
+    <h2>Olay Köpürme veya Olay Yakalama?</h2>
+<p>HTML DOM'de iki tür olay yayılımı vardır: köpürme ve yakalama.</p>
+<p>Olay yayılımı, bir olay meydana geldiğinde öğe sırasını tanımlamanın bir yoludur. Bir</p>
+<p><div> öğesinin içinde <.p> öğeniz varsa ve kullanıcı <.p> öğesini tıklarsa, önce hangi öğenin "click" olayı işlenmelidir?</.p>
+<p>Gelen fokurdayan iç en öğenin olay birinci ve ardından dış işlenir: <p> öğesinin tıklama etkinlik, ilk önce <div> öğesinin tıklama olayını ele alınır.</p>
+<p>Gelen yakalayan dış çoğu elementin olay ilk ve daha sonra iç işlenir: <.div> öğesinin tıklama etkinlik, ilk önce <.p> öğesinin tıklama olayını ele alınacaktır.</.p>
+<p>AddEventListener () yöntemiyle, "useCapture" parametresini kullanarak yayılma türünü belirleyebilirsiniz:</p>
+    <table>
+        <tr>
+            <td>addEventListener(event, function, useCapture);</td>
+        </tr>
+    </table>
+    <p>Varsayılan değer false şeklindedir ve köpüren yayılım kullanılır, değer true olarak ayarlandığında olay yakalama yayılımını kullanır.</p>
+    <table>
+        <tr>
+            <td><p>document.getElementById("myP").addEventListener("click", myFunction, true);</p>
+            <p>document.getElementById("myDiv").addEventListener("click", myFunction, true);</p></td>
+        </tr>
+    </table>
+<h2>RemoveEventListener () yöntemi</h2>
+
+    <p>removeEventListener()Yöntem addEventListener () metodu ile bağlı olan olay işleyicileri kaldırır:</p>
+    <table>
+        <tr>
+            <td>element.removeEventListener("mousemove", myFunction);</td>
+        </tr>
+    </table>
+<h2>Tarayıcı Desteği</h2>
+
+    <p>Tablodaki sayılar, bu yöntemleri tam olarak destekleyen ilk tarayıcı sürümünü belirtir.</p>
+<strong>NOT:</strong>
+<p>addEventListener() ve removeEventListener() yöntemler IE 8 ve önceki sürümlerinde desteklenmez. Ancak, bu belirli tarayıcı sürümleri attachEvent()için,</p>
+<p>öğeye bir olay işleyicileri ekleme yöntemini ve öğeyi detachEvent()kaldırma yöntemini kullanabilirsiniz:</p>
+    <table>
+        <tr>
+            <td><p>element.attachEvent(event, function);</p>
+            <p>element.detachEvent(event, function);</p></td>
+        </tr>
+    </table>
+
+</center>
+
+</body>
+</html>

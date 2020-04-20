@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object ( Nesne) özellikleri</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+
+    </ol>
+</ul>
+
+
+<center>  <h1> JavaScript Nesne özellikleri </h1>
+    <p>Özellikler, herhangi bir JavaScript nesnesinin en önemli parçasıdır.</p>
+<h2>JavaScript Özellikleri</h2>
+<p>Özellikler, bir JavaScript nesnesiyle ilişkili değerlerdir.</p>
+<p>JavaScript nesnesi, sıralanmamış özelliklerin bir koleksiyonudur.</p>
+<p>Özellikler genellikle değiştirilebilir, eklenebilir ve silinebilir, ancak bazıları salt okunurdur.</p>
+
+    <h2>JavaScript Özelliklerine Erişme</h2>
+    <p>Bir nesnenin özelliğine erişmek için sözdizimi:</p>
+
+    <table style="width:40%">
+        <tr>
+            <th>objectName.property       <em>  // person.age</em></th>
+        </tr>
+    </table>
+    <p>veya</p>
+    <table style="width:40%">
+        <tr>
+            <th>objectName["property"]     <em> // person["age"]</em></th>
+        </tr>
+    </table>
+   <p>veya</p>
+    <table style="width:40%">
+        <tr>
+            <th>objectName[expression]    <em> // x = "age"; person[x]</em> </th>
+        </tr>
+    </table>
+    <br></br>
+    <mark>İfade bir özellik adına göre değerlendirilmelidir.</mark>
+    <h5>ÖRNEK1:person.firstname + " is " + person.age + " years old.";</h5>
+    <h5>ÖRNEK2:person["firstname"] + " is " + person["age"] + " years old.";</h5>
+    <h2>İçin JavaScript ... in Loop</h2>
+    <p>JavaScript for...inifadesi bir nesnenin özellikleri arasında dolaşır.</p>
+    <h3>Sözdizimi</h3>
+    <h5>ÖRNEK:for (variable in object) {
+     <p> <em>// code to be executed</p> </em>
+        }</h5>
+    <br>
+    <p ><strong style="color: #ff4ddd">for...in </strong>Döngünün içindeki kod bloğu her özellik için bir kez yürütülür.</p>
+    <p>Bir nesnenin özellikleri arasında döngü yapmak:</p>
+    <div id="tablo1">
+        <p>var person = {fname:"John", lname:"Doe", age:25};</p>
+        <p>for (x in person) {</p>
+        <p>txt += person[x];</p>
+        <p>}</p>
+    </div>
+    <h2>Yeni Mülk Ekleme</h2>
+    <p>Mevcut bir nesneye basitçe bir değer vererek yeni özellikler ekleyebilirsiniz.</p>
+    <p>Kişi nesnesinin zaten var olduğunu varsayın - daha sonra ona yeni özellikler verebilirsiniz:</p>
+
+    <table style="width:40%">
+        <tr>
+            <th>person.nationality = "English";   </th>
+        </tr>
+    </table>
+
+    <h2>Mülkleri Silme</h2>
+    <p>deleteAnahtar kelime bir nesnenin özelliği siler:</p>
+
+    <table style="width:40%">
+        <tr>
+            <th><p>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}; </p> </th>
+
+        </tr>
+    </table>
+    <table style="width:40%">
+        <tr>
+            <th><p>delete person.age;   <em>// or delete person["age"]; </em></p></th>
+        </tr>
+    </table>
+    <p ><strong style="color: #ff4ddd">delete </strong>Anahtar kelime özelliğinin değerini ve özelliğini kendisi hem siler.</p>
+    <p>Silindikten sonra, özellik tekrar geri eklenmeden önce kullanılamaz.</p>
+    <p ><strong style="color: #ff4ddd">delete </strong>Operatör nesne özellikleri kullanılmak üzere tasarlanmıştır. Değişkenler veya fonksiyonlar üzerinde hiçbir etkisi yoktur.</p>
+    <p ><strong style="color: #ff4ddd">delete </strong>Operatör önceden tanımlanmış JavaScript nesnesi özelliklerine kullanılmamalıdır. Uygulamanızı kilitleyebilir.</p>
+
+    <h2>Mülk Nitelikleri</h2>
+    <p>Tüm özelliklerin bir adı vardır. Ayrıca bir de değerleri var.</p>
+    <p>Değer, mülkün özelliklerinden biridir.</p>
+    <p>Diğer özellikler şunlardır: numaralandırılabilir, yapılandırılabilir ve yazılabilir.</p>
+    <p>Bu öznitelikler özelliğe nasıl erişilebileceğini tanımlar (okunabilir mi? Yazılabilir mi?)</p>
+    <p>JavaScript'te tüm öznitelikler okunabilir, ancak yalnızca değer özniteliği değiştirilebilir (ve yalnızca özellik yazılabilirse).</p>
+    <p>(ECMAScript 5, tüm özellik niteliklerini almak ve ayarlamak için yöntemlere sahiptir)</p>
+
+    <h2>Prototip Özellikleri</h2>
+    <p>JavaScript nesneleri prototiplerinin özelliklerini devralır.</p>
+    <p>strong style="color: #ff4ddd">delete </strong>>Anahtar kelime miras özelliklerini silmez, ancak bir prototip özelliği silerseniz, prototip miras tüm nesneleri etkiler.</p>
+
+
+
+
+</center>
+</body>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonksiyon Çağırma</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+
+
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<center>
+    <h1>JavaScript Fonksiyon Çağırma</h1>
+    <p>Bir JavaScript işlevinin içindeki kod, "bir şey" çağırdığında çalıştırılır.</p>
+    <h2>JavaScript İşlevini Çağırma</h2>
+    <p>İşlev tanımlandığında işlev içindeki kod yürütülmez.</p>
+    <p>Bir işlevin içindeki kod, işlev çağrıldığında yürütülür.</p>
+    <p>"Bir işlevi çağırmak" yerine "bir işlevi çağır" terimini kullanmak yaygındır.</p>
+    <p>"Bir işlevi çağırmak", "bir işlevi başlatmak" veya "bir işlevi yürütmek" demek yaygındır.</p>
+    <h2>Bir Fonksiyonu Fonksiyon Olarak Çağırma</h2>
+    <div id="tablo">
+        <p>function myFunction (a, b) {</p>
+        <p>return a * b;</p>
+        <p>}</p>
+        <p>myFunction (10, 2); // 20 dönecek</p>
+    </div>
+    <p>Yukarıdaki işlev herhangi bir nesneye ait değildir. Ancak JavaScript'te her zaman varsayılan bir global nesne vardır.</p>
+    <p>HTML'de varsayılan global nesne HTML sayfasının kendisidir, bu nedenle yukarıdaki işlev HTML sayfasına "aittir".</p>
+    <p>Bir tarayıcıda sayfa nesnesi tarayıcı penceresidir. Yukarıdaki işlev otomatik olarak bir pencere işlevi haline gelir.</p>
+    <p>myFunction () ve window.myFunction () aynı işlevdir:</p>
+    <div id="tablo">
+        <p>function myFunction (a, b) {</p>
+        <p>return a * b;</p>
+        <p>}</p>
+        <p>window.myFunction (10, 2); // Ayrıca 20 döndürür</p>
+    </div>
+    <p>Bu, bir JavaScript işlevini çağırmanın yaygın bir yoludur, ama çok iyi bir uygulama değil.</p>
+    <p>Genel değişkenler, yöntemler veya işlevler, genel nesnede kolayca ad çakışmaları ve hatalar oluşturabilir.</p>
+    <h2>This Anahtar Kelimesi</h2>
+    <p>JavaScript olarak adlandırılan şey, geçerli koda "sahip" olan nesnedir.</p>
+    <p>Bunun değeri, bir işlevde kullanıldığında, işlevin "sahibi" olan nesnedir.</p>
+    <p>Bunun bir değişken olmadığını unutmayın. Bir anahtar kelime. Bunun değerini değiştiremezsiniz.</p>
+    <p>İpucu: Bu anahtar kelime hakkında daha fazla bilgiyi JS bu Anahtar Kelimede okuyun.</p>
+    <h2>Küresel Nesne</h2>
+    <p>Bir işlev sahip nesnesi olmadan çağrıldığında, bunun değeri genel nesne haline gelir.</p>
+    <p>Bir web tarayıcısında genel nesne tarayıcı penceresidir.</p>
+    <p>Bu örnek, pencere nesnesini bunun değeri olarak döndürür:</p>
+    <div id="tablo">
+        <p>var x = myFunction (); // x pencere nesnesi olacak</p>
+        <p>function myFunction () {</p>
+        <p>return this;</p>
+        <p>}</p>
+    </div>
+    <p>Bir işlevi genel işlev olarak çağırmak, bunun değerinin genel nesne olmasına neden olur.</p>
+    <p>Window nesnesini değişken olarak kullanmak, programınızı kolayca kilitleyebilir.</p>
+    <h2>Bir Fonksiyonu Yöntem Olarak Çağırma</h2>
+    <p>JavaScript'te işlevleri nesne yöntemleri olarak tanımlayabilirsiniz.</p>
+    <p>Aşağıdaki örnek, iki özellik (firstName ve lastName) ve bir yöntem (fullName) içeren bir nesne (myObject) oluşturur:</p>
+<div id="tablo">
+    <p>var myObject = {firstName: "John",</p>
+    <p>lastName: "Doe",</p>
+    <p>fullName: function () {</p>
+    <p>return this.firstName + "" + this.lastName;</p>
+    <p>}</p>
+    <p>}</p>
+    <p>myObject.fullName (); // "John Doe" geri dönecek</p></div>
+
+    <p>FullName yöntemi bir işlevdir. İşlev nesneye aittir. myObject, işlevin sahibidir.</p>
+    <p>Buna denilen şey, JavaScript kodunun "sahibi" olan nesnedir. Bu durumda bunun değeri myObject olur.</p>
+    <h3>Dene! Bunun değerini döndürmek için fullName yöntemini değiştirin:</h3>
+    <div id="tablo">
+        <p>var myObject = {</p>
+        <p>firstName: "John",</p>
+        <p>lastName: "Doe",</p>
+        <p>fullName: function () {</p>
+        <p>return this;</p>
+        <p>}</p>
+        <p>}</p>
+        <p>myObject.fullName (); // [object Object] (sahip olan nesne) döndürür</p>
+    </div>
+    <p>Bir işlevi nesne yöntemi olarak çağırmak, bunun değerinin nesnenin kendisi olmasına neden olur.</p>
+    <h2>İşlev Oluşturucu ile İşlev Çağırma</h2>
+    <p> Bir işlev çağırma işleminden önce yeni anahtar sözcük gelirse, bu bir yapıcı çağırma işlemidir.</p>
+    <p>Yeni bir işlev oluşturduğunuz anlaşılıyor,
+        ancak JavaScript işlevleri nesneler olduğu için aslında yeni bir nesne oluşturuyorsunuz:</p>
+    <div id="tablo">
+        <p>// Bu bir işlev yapıcıdır:</p>
+        <p>function myFunction (arg1, arg2) {</p>
+        <p>this.firstName = arg1;</p>
+        <p>this.lastName = arg2;</p>
+        <p>}</p> <br>
+        <p>// Bu yeni bir nesne oluşturur</p>
+        <p>var x = new myFunction ("John", "Doe");</p>
+        <p>x.firstName; // "John" geri dönecek</p>
+    </div>
+    <p>Bir yapıcı çağırma yeni bir nesne oluşturur.</p>
+    <p>Yeni nesne özellikleri ve yöntemleri yapıcısından devralır.</p>
+    <div id="tablo">
+        <p>Yapıcıdaki this anahtar kelimesinin bir değeri yoktur.</p>
+        <p>This anahtar kelimesinin değeri, işlev çağrıldığında oluşturulan yeni nesne olacaktır.</p>
+    </div>
+    </center>
+</div>
+</body>
+</html>

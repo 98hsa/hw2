@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonksiyon Yapısı</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+
+
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <center>  <h1> JavaScript Fonksiyonları </h1>
+        <p>JavaScript işlevi, belirli bir görevi gerçekleştirmek için tasarlanmış bir kod bloğudur.</p>
+        <p>"Bir şey" çağrdığında bir JavaScript işlevi yürütülür (onu çağırır).</p>
+        <h5>ÖRNEK:
+            <p> function myFunction(p1, p2) {</p>
+            <p>  return p1 * p2;   // The function returns the product of p1 and p2</p>
+            }
+        </h5>
+<h2>JavaScript İşlev Sözdizimi</h2>
+        <p>Bir JavaScript işlevi function, ardından bir ad ve ardından parantez () ile birlikte tanımlanır .</p>
+        <p>İşlev adları harf, rakam, alt çizgi ve dolar işareti içerebilir (değişkenlerle aynı kurallar).</p>
+        <p>Parantezler virgülle ayrılmış parametre adları içerebilir:
+            ( parametre1, parametre2, ... )</p>
+        <p>İşlev tarafından yürütülecek kod, küme parantezlerinin içine yerleştirilir: {}</p>
+        <h5>ÖRNEK:
+            <p> function name(parameter1, parameter2, parameter3) {</p>
+            <p>  // code to be executed</p>
+            }
+        </h5>
+        <h2>İşlev Çağırma</h2>
+        <p>"Bir şey" işlevi çağırdığında (çağırdığında) işlevin içindeki kod yürütülür :</p>
+        <p><li>Bir olay meydana geldiğinde (kullanıcı bir düğmeyi tıkladığında)</li></p>
+        <p><li>JavaScript kodundan çağrıldığında (çağrıldığında)</li></p>
+        <p><li>Otomatik olarak (kendi kendine çağrılır)</li></p>
+
+        <h5>ÖRNEK:
+            <p> var x = myFunction(4, 3);   // Function is called, return value will end up in</p>
+           x
+            <p>  function myFunction(a, b) {</p>
+            <p>return a * b;             // Function returns the product of a and b</p>
+            }
+        </h5>
+
+<h2>Neden Fonksiyonlar?</h2>
+        <p>Kodu yeniden kullanabilirsiniz: Kodu bir kez tanımlayın ve birçok kez kullanın.</p>
+        <p>Farklı sonuçlar elde etmek için aynı kodu farklı argümanlarla birçok kez kullanabilirsiniz.</p>
+
+
+        <h5>ÖRNEK:
+            <p> function toCelsius(fahrenheit) {</p>
+            <p>  return (5/9) * (fahrenheit-32);</p>
+            }
+            <p>document.getElementById("demo").innerHTML = toCelsius(77);</p>
+            }
+        </h5>
+
+
+    </center>
+</div>
+</body>
+</html>

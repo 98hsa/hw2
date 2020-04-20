@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Düğümleri</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+<center> <h1>JavaScript HTML DOM Öğeleri (Düğümler)</h1>
+    <p>HTML DOM'ye yeni bir öğe eklemek için, önce öğeyi (öğe düğümü) oluşturmanız ve ardından varolan bir öğeye eklemeniz gerekir.</p>
+   <h2>Yeni HTML Öğeleri (Düğümler) Oluşturma</h2>
+    <p>HTML DOM'ye yeni bir öğe eklemek için, önce öğeyi (öğe düğümü) oluşturmanız ve ardından varolan bir öğeye eklemeniz gerekir.</p>
+
+    <h2>Açıklanan Örnek</h2>
+    <p>Bu kod yeni bir <p>öğe oluşturur :</p>
+    <table>
+        <tr>
+            <td>var para = document.createElement("p");</td>
+        </tr>
+    </table>
+
+    <p>Öğeye metin eklemek için, <.p>önce bir metin düğümü oluşturmanız gerekir. Bu kod bir metin düğümü oluşturur:</p>
+    <table>
+        <tr>
+            <td>var node = document.createTextNode("This is a new paragraph.");</td>
+        </tr>
+    </table>
+
+    <p>Ardından, <.p>öğeye metin düğümünü eklemelisiniz :</.p>
+    <table>
+        <tr>
+            <td>para.appendChild(node);</td>
+        </tr>
+    </table>
+    <p>Son olarak, yeni öğeyi var olan bir öğeye eklemelisiniz.</p>
+    <table>
+        <tr>
+            <td>var element = document.getElementById("div1");</td>
+        </tr>
+    </table>
+    <p>Bu kod, yeni öğeyi mevcut öğeye ekler:</p>
+    <table>
+        <tr>
+            <td>element.appendChild(para);</td>
+        </tr>
+    </table>
+   <h2>Yeni HTML Öğeleri Oluşturma - insertBefore ()</h2>
+<p>appendChild()Önceki örnekte yöntem olup, ana son çocuk olarak yeni bir unsur eklenmesi ile oluşturulmaktadır.</p>
+<p>Eğer istemiyorsanız insertBefore()yöntemi kullanabilirsiniz.</p>
+<h2>Mevcut HTML Öğelerini Kaldırma</h2>
+<p>Bir HTML öğesini kaldırmak için şu remove() yöntemi kullanın </p>
+
+<h2>Açıklanan Örnek </h2>
+    <p>Bu HTML belgesi <.div>iki alt düğüme (iki <.p> öğe) sahip bir öğe içeriyor :</.p>
+    <table>
+        <tr>
+            <td>
+                <p><.div></p>
+                <p> <.p id="p1">This is a paragraph.<./p></p>
+                <p><.p id="p2">This is another paragraph.<./p></p>
+                <p><./div></p>
+            </td>
+        </tr>
+    </table>
+<p>Kaldırmak istediğiniz öğeyi bulun:</p>
+    <table>
+        <tr>
+            <td>var elmnt = document.getElementById("p1");</td>
+        </tr>
+    </table>
+<p>Ardından, o öğe üzerinde remove () yöntemini yürütün:</p>
+    <table>
+        <tr>
+            <td>elmnt.remove();</td>
+        </tr>
+    </table>
+    <mark>remove()Yöntem, eski tarayıcılarda çalışmayacak nasıl kullanılacağı hakkında aşağıdaki örneği görmez removeChild()bunun yerine.</mark>
+   <h2>Alt Düğümü Kaldırma</h2>
+<p>remove()Yöntemi desteklemeyen tarayıcılarda, bir öğeyi kaldırmak için üst düğümü bulmanız gerekir</p>
+   <h2>Açıklanan Örnek</h2>
+    <p>Bu HTML belgesi <.div>iki alt düğüme (iki <.p> öğe) sahip bir öğe içeriyor :</.p>
+    <table>
+        <tr>
+            <td>
+                <p><.div></p>
+                <p> <.p id="p1">This is a paragraph.<./p></p>
+                <p><.p id="p2">This is another paragraph.<./p></p>
+                <p><./div></p>
+            </td>
+        </tr>
+    </table>
+
+    <p>Öğeyi şununla bulun id="div1":</p>
+    <table>
+        <tr>
+            <td>var parent = document.getElementById("div1");</td>
+        </tr>
+    </table>
+    <p><.p>Öğeyi şununla bulun id="p1":</p>
+    <table>
+        <tr>
+            <td>var child = document.getElementById("p1");</td>
+        </tr>
+    </table>
+    <p>Çocuğu ebeveyninden çıkarın:</p>
+    <table>
+        <tr>
+            <td>parent.removeChild(child);</td>
+        </tr>
+    </table>
+    <p>İşte genel bir geçici çözüm: Kaldırmak istediğiniz alt öğeyi parentNodebulun ve üst öğesini bulmak için özelliğini kullanın:</p>
+    <table>
+        <tr>
+            <td><p>var child = document.getElementById("p1");</p>
+            <p>child.parentNode.removeChild(child);</p></td>
+        </tr>
+    </table>
+<h2>HTML Öğelerini Değiştirme </h2>
+<p>Bir öğeyi HTML DOM ile değiştirmek için şu replaceChild()yöntemi kullanın :</p>
+
+
+</center>
+</body>
+</html>

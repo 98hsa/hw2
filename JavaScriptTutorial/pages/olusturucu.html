@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nesne Oluşturucuları</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+<center>  <h1> JavaScript Nesne Oluşturucuları</h1>
+    <div id="tablo1">
+        <p>function Person(first, last, age, eye) {</p>
+        <p>this.firstName = first;</p>
+        <p>this.lastName = last;</p>
+        <p>this.age = age;</p>
+        <p>this.eyeColor = eye;}</p>
+    </div>
+    <br>
+    <mark>Yapıcı işlevlerini büyük harfli ilk harfle adlandırmak iyi bir uygulama olarak kabul edilir.</mark>
+
+    <h2>Nesne Türleri (Planlar) (Sınıflar)</h2>
+    <p>Önceki bölümlerden örnekler sınırlıdır. Yalnızca tek nesneler oluştururlar.</p>
+    <p>Bazen aynı "tipte" birçok nesne oluşturmak için bir " taslak " lazım .</p>
+    <p>Bir "nesne türü" yaratmanın yolu, bir nesne yapıcı işlevi kullanmaktır .</p>
+    <p>Yukarıdaki örnekte function Person(), bir nesne yapıcı işlevidir.</p>
+    <p>Aynı türden nesneler, yapıcı işlevini şu newanahtar sözcükle çağırarak oluşturulur :</p>
+<h5>ÖRNEK:var myFather = new Person("John", "Doe", 50, "blue");
+   <p> var myMother = new Person("Sally", "Rally", 48, "green");</p></h5>
+
+    <table>
+        <tr>
+            <td><p>var myFather = new Person("John", "Doe", 50, "blue");</p>
+                <p>var myMother = new Person("Sally", "Rally", 48, "green");</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>This Kelime</h2>
+    <p>JavaScript'te, çağrılan şey this, koda "sahip" olan nesnedir.</p>
+    <p>thisBir nesnede kullanıldığında değeri nesnenin kendisidir.</p>
+    <p>Bir yapıcı işlevinde thisbir değer yoktur. Yeni nesnenin yerine geçer. thisYeni
+        bir nesne oluşturulduğunda değeri yeni nesne olur.</p>
+    <br>
+    <mark>Bunun thisbir değişken olmadığını unutmayın . Bir anahtar kelime. Değerini değiştiremezsiniz this.</mark>
+
+<h2>Bir Nesneye Özellik Ekleme</h2>
+    <p>Mevcut bir nesneye yeni bir özellik eklemek kolaydır:</p>
+
+    <table>
+        <tr>
+            <td>myFather.nationality = "English";</td>
+        </tr>
+    </table>
+    <h2>Bir Nesneye Yöntem Ekleme</h2>
+    <p>Mevcut bir nesneye yeni bir yöntem eklemek kolaydır:</p>
+    <table>
+        <tr>
+            <td>
+                <p>myFather.name = function () {</p>
+                <p> return this.firstName + " " + this.lastName;</p>
+                <p>};</p>
+            </td>
+        </tr>
+    </table>
+<p>Yöntem myFather'a eklenecektir. Anneme değil. (Başka hiçbir nesneye değil).</p>
+
+<h2>Yapıcıya Özellik Ekleme</h2>
+    <p>Varolan bir nesneye yeni bir özellik eklediğiniz gibi, nesne oluşturucuya yeni bir özellik ekleyemezsiniz:</p>
+    <table>
+        <tr>
+            <td>Person.nationality = "English";</td>
+        </tr>
+    </table>
+<br>
+    <mark>Bu şekilde nesne özellikleri varsayılan değerlere sahip olabilir.</mark>
+
+<h2>Bir Yapıcıya Yöntem Ekleme</h2>
+<p>Yapıcı işleviniz ayrıca yöntemleri de tanımlayabilir:</p>
+
+    <div id="tablo1">
+        <p>function Person(first, last, age, eyecolor) {</p>
+        <p>this.firstName = first;</p>
+        <p>this.lastName = last;</p>
+        <p>this.age = age;</p>
+        <p>this.eyeColor = eyecolor;</p>
+        <p>this.name = function() {return this.firstName + " " + this.lastName;};} </p>
+    </div>
+<p>Varolan bir nesneye yeni bir yöntem eklediğiniz gibi, nesne oluşturucuya yeni bir yöntem ekleyemezsiniz.</p>
+<p>ChangeName () işlevi, adın değerini kişinin lastName özelliğine atar.</p>
+<h5>myMother.changeName("Doe");</h5>
+<p>JavaScript "yerine" tarafından bahsetme şeklini kişi bilir bu ile myMother .</p>
+
+    <h2>Yerleşik JavaScript Oluşturucuları</h2>
+<p>JavaScript yerel nesneler için yerleşik yapıcılara sahiptir:</p>
+
+<div id="tablo1">
+    <p>var x1 = new Object();</p>
+    <p>var x2 = new String();</p>
+    <p>var x3 = new Number();</p>
+    <p>var x4 = new Boolean();</p>
+    <p>var x5 = new Array();</p>
+    <p>var x6 = new RegExp();</p>
+    <p>var x7 = new Function();</p>
+    <p>var x8 = new Date();</p>
+
+</div>
+<p>Math()Nesne listesinde değil. Mathküresel bir nesnedir. newAnahtar kelime üzerinde kullanılamaz Math.</p>
+
+
+
+    <strong><em style="background-color: azure">Biliyor musun?</em></strong>
+<p>Yukarıda görebileceğiniz gibi, JavaScript ilkel veri türlerinin nesne sürümleri String,</p>
+<p>Numberve Boolean. Ancak karmaşık nesneler oluşturmak için hiçbir neden yoktur. İlkel değerler çok daha hızlıdır.</p>
+<sub>AYRICA:</sub>
+<p>  <strong></strong> <em style="background-color: azure">{}Bunun yerine nesne değişmez değerleri kullanın new Object().</strong></p>
+<p>  <strong><em style="background-color: azure">""Bunun yerine dize değişmez değerleri kullanın new String().</em></strong></p>
+<p> <strong><em style="background-color: azure">12345Bunun yerine sayı değişmez değerleri kullanın new Number().</em></strong></p>
+<p> <strong><em style="background-color: azure">true / falseBunun yerine boole değişmez değerleri kullanın new Boolean().</em></strong></p>
+<p> <strong><em style="background-color: azure">[]Bunun yerine dizi değişmezlerini kullanın new Array().</em></strong></p>
+<p><strong><em style="background-color: azure">/()/Bunun yerine desen değişmez değerleri kullanın new RegExp().</em></strong></p>
+<p> <strong><em style="background-color: azure">() {}Bunun yerine işlev ifadelerini kullanın new Function().</em></strong></p>
+
+    <div id="tablo1">
+        <p>var x1 = {};</p>
+        <p>var x2 = "";</p>
+        <p>var x3 = 0;  </p>
+        <p>var x4 = false;</p>
+        <p>var x5 = [];  </p>
+        <p>var x6 = /()/</p>
+        <p>var x7 = function(){};</p>
+    </div>
+<h2>Dize Nesneleri</h2>
+<p>Normalde, dizeler ilkel olarak oluşturulur: var firstName = "John"</p>
+<p>Ancak dizeler, newanahtar kelime kullanılarak nesne olarak da oluşturulabilir :var firstName = new String("John")</p>
+    <p>Dizelerin neden <ins>JS Dizeleri</ins> bölümünde nesne olarak oluşturulmaması gerektiğini öğrenin .</p>
+
+
+<h2>Nesne Sayısı</h2>
+<p>Normalde sayılar ilkel olarak oluşturulur: var x = 123</p>
+<p>Ancak sayılar, newanahtar kelime kullanılarak nesne olarak da oluşturulabilir :var x = new Number(123)</p>
+    <p><ins>JS Numaraları</ins> bölümünde sayıların neden nesne olarak oluşturulmaması gerektiğini öğrenin .</p>
+
+<h2>Boole Nesneleri</h2>
+<p>Normalde, booleans ilkel olarak oluşturulur: var x = false</p>
+<p>Ancak booleans newanahtar kelimesini kullanarak nesne olarak da oluşturulabilir :var x = new Boolean(false)</p>
+    <p>Booleanların neden <ins>JS Booleans</ins> bölümünde nesne olarak oluşturulmaması gerektiğini öğrenin .</p>
+
+</center>
+
+</body>
+</html>

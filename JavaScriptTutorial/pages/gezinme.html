@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM gezinme</title>
+    <link rel="stylesheet" href="../css/js.css">
+    <script src="../js/deneneme.js"></script>
+
+</head>
+<body>
+<button type="button" onclick="renkDegistir('orange')">TURUNCU</button>
+
+<button type="button" onclick="renkDegistir('green')">YEŞİL</button>
+
+<button type="button" onclick="renkDegistir('white')">BEYAZ</button>
+<ul>
+    <h2>    JavaScript</h2>
+    <li><a href="giris.html">JavaScript Giriş</a></li>
+    <li><a href="syntax.html">Yazılım(Syntax) Yapısı</a></li>
+    <li><a href="degisken.html">Değişkenler</a></li>
+    <li><a href="operator.html">Operatörler</a></li>
+    <li><a href="aritmetik.html">Aritmetik</a></li>
+    <li><a href="veritipleri.html">Veri Tipleri</a></li>
+    <li><a href="fonksiyon.html">Fonksiyon Yapısı</a></li>
+    <li><a href="olay.html">Olaylar(Events)</a></li>
+    <li><a href="stringsayi.html">Stringler, Sayılar</a></li>
+    <li><a href="dizi.html">Diziler ve Dizi İşlemleri</a></li>
+    <li><a href="kosul.html">If Koşul Yapıları</a></li>
+    <li><a href="dongu.html">Döngüler</a></li>
+    <li><a href="donusum.html">Tip Dönüşümleri</a></li>
+    <li><a href="mimari.html">Çalışma Yapısı ve Genel Mimarisi</a></li>
+    <li><strong><a href="FonksiyonKullanimi.html">Fonksiyon Kullanımı </a></strong></li>
+    <ol> <li><a href="fonksiyontanimlari.html"> Fonksiyon Tanımları</a></li>
+        <li><a href="Parametreler.html">Fonksiyon Parametreleri</a></li>
+        <li><a href="Cagırma.html">Fonksiyon Çağırma</a></li>
+        <li><a href="Cağrı.html">Fonksiyon Çağrısı</a></li>
+        <li><a href="fonk.html">Fonksiyon </a></li>
+        <li><a href="islevkapat.html">Fonksiyon İşlevlerini Kapat</a></li>
+
+    </ol>
+
+
+    <li><strong><a href="Object(Nesne).html">JavaScript Object ( Nesne) Modeli ve Kullanımı</a></strong></li>
+    <ol> <li><a href="Objecttanimlari.html"> Nesne Tanımları</a></li>
+        <li><a href="ozellik.html">Nesne Özellikleri</a></li>
+        <li><a href="yonetim.html">Nesne Yöntemleri</a></li>
+        <li><a href="goruntuleme.html">Nesne Görüntüleme</a></li>
+        <li><a href="erisim.html">Nesne Erişimcileri</a></li>
+        <li><a href="olusturucu.html">Nesne Oluşturucuları</a></li>
+        <li><a href="prototipleme.html">Nesne Protopitleri</a></li>
+        <li><a href="ECMA.html">Nesne ECMAScript 5</a></li>
+
+    </ol>
+    <li><strong><a href="DOM.html"> JavaScript DOM (Document Object Model) Kullanımı</a></strong></li>
+    <ol> <li><a href="Giris1.html"> DOM Giriş</a></li>
+        <li><a href="Yontemleri.html">DOM Yöntemleri</a></li>
+        <li><a href="Belgesi.html">DOM Belgesi</a></li>
+        <li><a href="Ogeleri.html">DOM Öğeleri</a></li>
+        <li><a href="HTML.html">DOM HTML</a></li>
+        <li><a href="CSS.html">DOM CSS</a></li>
+        <li><a href="Animasyonlar.html">DOM Aminasyonları</a></li>
+        <li><a href="Etkinlikleri.html">DOM Etkinlikleri</a></li>
+        <li><a href="dinleyici.html">DOM Olay Dinleyicisi</a></li>
+        <li><a href="gezinme.html">DOM Gezinme</a></li>
+        <li><a href="dugumleri.html">DOM Düğümleri</a></li>
+        <li><a href="koleksiyon.html">DOM Koleksiyonları</a></li>
+        <li><a href="dugum.html">DOM Düğüm Listeleri</a></li>
+        <li><strong><a href="hw2examples/adamAsmaca.html">ADAMASMACA</a></strong></li>
+        <li><strong><a href="hw2examples/kullaniciformu.html">FORM</a></strong></li>
+        <li><strong><a href="hw2examples/alisverisListesi.html">LİSTE</a></strong></li>
+        <li><strong><a href="hw2examples/Rapor.html">RAPOR</a></strong></li>
+        <br><br>
+    </ol>
+</ul>
+
+<center> <h1> JavaScript HTML DOM Gezinme </h1>
+    <h2>DOM Düğümleri</h2>
+    <li>Belgenin tamamı bir belge düğümüdür</li>
+    <li>Her HTML öğesi bir öğe düğümüdür</li>
+    <li>HTML öğelerinin içindeki metin metin düğümleridir</li>
+    <li>Her HTML özelliği bir özellik düğümüdür (kullanımdan kaldırıldı)</li>
+    <li>Tüm yorumlar yorum düğümleridir</li>
+    <br>
+    <p>HTML DOM ile, düğüm ağacındaki tüm düğümlere JavaScript ile erişilebilir.</p>
+    <p>Yeni düğümler oluşturulabilir ve tüm düğümler değiştirilebilir veya silinebilir.</p>
+
+    <h2>Düğüm İlişkileri</h2>
+    <p>Düğüm ağacındaki düğümlerin birbirleriyle hiyerarşik bir ilişkisi vardır.</p>
+    <p>Ebeveyn, çocuk ve kardeş terimleri ilişkileri tanımlamak için kullanılır.</p>
+<li>Bir düğüm ağacında, üst düğüme kök (veya kök düğüm) denir</li>
+<li>Kök (üst öğesi olmayan) hariç her düğümün tam olarak bir üst öğesi vardır</li>
+<li>Bir düğümün birkaç çocuğu olabilir</li>
+<li>Kardeşler (erkek veya kız kardeşler) aynı ebeveyne sahip düğümlerdir</li>
+
+
+<div id="tablo1">
+    <p><.html></p>
+    <p><.head></p>
+    <p><.title>DOM Tutorial</.title></p>
+    <p><./head></p>
+    <p><.body></p>
+    <p><.h1>DOM Lesson one<./h1>/p>
+    <p><.p>Hello world!<./p></p>
+    <p><./body></p>
+    <p><./html></p>
+</div>
+<p>Yukarıdaki HTML'den şunları okuyabilirsiniz:</p>
+<li><.html> kök düğüm</li>
+<li><.html> ebeveynleri yok</li>
+<li><.html>ebeveynidir <.head>ve<body></li>
+<li><.head> ilk çocuğu <.html></li>
+<li><.body> en son çocuğu <.html></li>
+    <p>ve:</p>
+<li><.head> bir çocuğu var: <.title></li>
+<li><.title> bir alt öğesi (bir metin düğümü) var: "DOM Eğitimi"</li>
+<li><.body>iki çocuğu var: <.h1>ve<.p></li>
+<li><.h1> bir çocuğu var: "DOM Birinci Ders"</li>
+<li><.p> bir çocuğu var: "Merhaba dünya!"</li>
+<li><.h1>ve <.p>kardeşler</li>
+    <h2>Düğümler Arasında Geçiş Yapma</h2>
+
+    <p>JavaScript ile düğümler arasında gezinmek için aşağıdaki düğüm özelliklerini kullanabilirsiniz:</p>
+    <li style="background-color: plum">parentNode</li>
+    <li style="background-color: plum">childNodes[nodenumber]</li>
+    <li style="background-color: plum">childNodes[nodenumber]</li>
+    <li style="background-color: plum">lastChild</li>
+    <li style="background-color: plum">nextSibling</li>
+    <li style="background-color: plum">previousSibling</li>
+    <h2>Alt Düğümler ve Düğüm Değerleri</h2>
+    <mark>DOM işlemede yaygın bir hata, bir eleman düğümünün metin içermesini beklemektir.</mark>
+    <table>
+        <tr>
+            <td><.title id="demo">DOM Tutorial<./title></td>
+
+        </tr>
+    </table>
+
+<p>Eleman düğümü <.title>(yukarıdaki örnekte) etmez olmayan metin içerir.</p>
+<p>"DOM Tutorial" değerine sahip bir metin düğümü içerir .</p>
+<p>Metin düğümünün değerine düğümün özelliği tarafından erişilebilir innerHTML:</p>
+
+    <table>
+        <tr>
+            <td>var myTitle = document.getElementById("demo").innerHTML</td>
+        </tr>
+    </table>
+
+<p>İnnerHTML özelliğine erişmek nodeValue , ilk alt öğeye erişmekle aynıdır :</p>
+
+    <table>
+        <tr>
+            <td>var myTitle = document.getElementById("demo").firstChild.nodeValue</td>
+        </tr>
+    </table>
+
+    <p>İlk çocuğa erişim şu şekilde de yapılabilir:</p>
+    <table>
+        <tr>
+            <td>var myTitle = document.getElementById("demo").childNodes[0].nodeValue;</td>
+        </tr>
+    </table>
+<h2>innerHTML</h2>
+<p>Bu öğreticide, bir HTML öğesinin içeriğini almak için innerHTML özelliğini kullanıyoruz.</p>
+<p>Bununla birlikte, yukarıdaki diğer yöntemleri öğrenmek, ağaç yapısını ve DOM'un gezinmesini anlamak için yararlıdır.</p>
+
+<h2>DOM Kök Düğümleri</h2>
+    <p>Tam belgeye erişime izin veren iki özel özellik vardır:</p>
+<li>document.body - Belgenin gövdesi</li>
+<li>document.documentElement - Tam belge</li>
+    <h2>NodeName Özelliği</h2>
+    <p>nodeNameTesiste düğümün adını belirtir.</p>
+    <li>nodeName salt okunur</li>
+    <li>Bir eleman düğümünün node adı, etiket adıyla aynıdır</li>
+    <li>Bir özniteliğin node adı Öznitelik adı</li>
+    <li>Bir metin düğümünün adı her zaman #text'dir</li>
+    <li>nodeNot düğümü adı her zaman #document</li>
+    <strong>NOT:</strong>
+    <p> nodeName her zaman bir HTML öğesinin büyük harfli etiket adını içerir.</p>
+    <h2>NodeValue Özelliği</h2>
+    <p>nodeValueTesiste düğümün değerini belirtir.</p>
+    <li>Öğe düğümleri için nodeValue: null</li>
+    <li>Metin düğümleri için nodeValue metnin kendisidir</li>
+    <li>Özellik düğümleri için nodeValue, özellik değeridir</li>
+    <h2>NodeType Özelliği</h2>
+    <p>nodeTypeMülkiyet salt okunur. Bir düğümün türünü döndürür.</p>
+    <p>En önemli nodeType özellikleri şunlardır:</p>
+
+
+    <table>
+        <tr>
+            <td>Node</td>
+            <td>Type</td>
+            <td>Example</td>
+        </tr>
+        <tr>
+            <td>ELEMENT_NODE</td>
+            <td>1</td>
+            <td><h1 class="heading">W3Schools</h1></td>
+        </tr>
+        <tr>
+            <td>ATTRIBUTE_NODE</td>
+            <td>2</td>
+            <td>class = "heading" (deprecated)</td>
+        </tr>
+        <tr>
+        <td>TEXT_NODE	</td>
+        <td>3</td>
+        <td>W3Schools</td>
+    </tr>
+        <tr>
+        <td>COMMENT_NODE</td>
+        <td>8</td>
+        <td>	<!-- This is a comment --></td>
+    </tr>
+        <tr>
+        <td>DOCUMENT_NODE</td>
+        <td>9</td>
+        <td>The HTML document itself (the parent of <.html>)</td>
+    </tr>
+        <tr>
+        <td>DOCUMENT_TYPE_NODE</td>
+        <td>10</td>
+        <td><.!Doctype html></td>
+    </tr>
+
+    </table>
+    <br>
+</center>
+</body>
+</html>
